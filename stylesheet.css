@@ -1,0 +1,215 @@
+* {
+  box-sizing: border-box;
+}
+html  {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+.clear {
+  clear: left;
+}
+
+.container {
+  max-width: 1170px;
+  width: 100%;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.top-wrapper {
+  padding: 200px 0 100px 0;
+  background-image: url(cake1.png);
+  background-size: cover;
+  color: #333333;
+  text-align: left;
+}
+
+.top-wrapper h1 {
+  opacity: 0.7;
+  font-family: 'Brush Script MT';
+  font-size: 45px;
+  font-weight: bold;
+}
+.top-wrapper p {
+  opacity: 0.7;
+  margin-bottom: 3px;
+}
+
+header {
+  height: 65px;
+  width: 100%;
+  background-color: #FFDBCE;
+  opacity: 0.8;
+  position :fixed;
+  top: 0;
+  z-index: 10;
+}
+
+.logo {
+  width: 124px;
+  margin-top: 2px;
+}
+
+.header-left {
+  float: left;
+}
+
+.header-right {
+  float: right;
+  margin-right: -25px;
+}
+
+.header-right a {
+  line-height: 65px;
+  padding: 0 25px;
+  color: black;
+  opacity: 0.8;
+  letter-spacing: 2px;
+  display: block;
+  float: left;
+  transition: all 0.5s;
+}
+
+.header-right a:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.menu-icon {
+  float: right;
+  width: 50px;
+  height: 50px;
+  padding-top: 15px ;
+  padding-left: 15px;
+  display:none;
+}
+.cake-wrapper {
+  padding-bottom: 80px;
+  padding-left: 5%;
+  padding-right: 5%;
+  background-color: #f7f7f7;
+  text-align: center;
+}
+
+.heading {
+  padding-top: 50px;
+  color: #5f5d60;
+}
+
+h2 {
+  font-weight: normal;
+  font-family: 'Brush Script MT';
+  font-size: 24px;
+}
+
+.cake{
+
+  float: left;
+  width: 25%;
+}
+.cake-text {
+  width: 80%;
+  display: inline-block;
+  margin-top: 15px;
+  font-size: 12px;
+  color: black;
+  opacity: 0.8;
+}
+
+.message-wrapper {
+  margin: 400px 0 65px 0;
+  background-image: url(cake2.png);
+  background-size: cover;
+  color: #333333;
+  text-align: right;
+  margin-top: 65px;
+}
+.ttl-message{
+  padding-top: 150px;
+}
+.message-wrapper h1 {
+  opacity: 0.9;
+  font-family: 'Brush Script MT';
+  font-size: 45px;
+  font-weight: bold;
+  color: white;
+}
+.message-wrapper p {
+  opacity: 0.9;
+  color: white;
+  padding-bottom: 150px;
+}
+.heading h1{
+    font-size: 50px;
+    text-align: center;
+  font-family: 'Brush Script MT';
+
+}
+.koki{
+  text-align: center;
+  float: left;
+  width: 25%;
+  display: inline-block;
+  margin-top: 15px;
+}
+.koki img{
+  width: 200px;height: 200px;
+}
+.koki-text {
+  width: 80%;
+  display: inline-block;
+  margin-top: 15px;
+  font-size: 12px;
+  color: black;
+  opacity: 0.8;
+}
+.scroll-top{
+  width: 50px;
+  height: 50px;
+  opacity: 0.8;
+  margin-left: 620px;
+  margin-bottom: 50px;
+
+
+}
+.scroll-top:hover{
+opacity: 1;
+}
+.scroll-top:active{
+  background-color: #FFDBCE;
+  border-radius: 50px;
+}
+footer img {
+  width: 125px;
+}
+
+footer p {
+  color: grey;
+  opacity: 0.7;
+  font-size: 12px;
+  float: right;
+  padding-top: 10px;
+}
+
+footer {
+  background-color: #FFDBCE;
+  padding-top: 30px;
+  padding-bottom: 20px;
+}
+.contact{
+
+  width: 20px;
+  height: 20px;
+  opacity: 0.8;
+  float: right;
+  margin-right: 20px;
+  margin-top: 18px;
+}
