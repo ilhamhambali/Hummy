@@ -20,11 +20,39 @@
           <a href="#section2">Cakes</a>
           <a href="#section3">About us</a>
           <a href="#section5">Contact</a>
-          <a href="#">Store</a>
+          <a onclick="document.getElementById('id-modal').style.display='block'" style="width:auto;">Login</a>
         </div>
       </div>
     </header>
-     <div class="top-wrapper" id="section1">
+
+    <div id="id-modal" class="modal">
+      <form class="modal-content animate"  method="post">
+        <div class="imgcontainer">
+          <span onclick="document.getElementById('id-modal').style.display='none'" class="close" title="Close Modal">&times;</span>
+          <img src="profile-user.png" alt="Avatar" class="avatar">
+        </div>
+
+        <div class="container">
+          <label class="uname"><b>Username</b></label>
+          <input type="text" placeholder="Enter Username" name="uname" required>
+
+          <label class="psw"><b>Password</b></label>
+          <input type="password" placeholder="Enter Password" name="psw" required>
+            
+          <button type="submit">Login</button>
+          <label>
+            <input type="checkbox" checked="checked" name="remember"> Remember me
+          </label>
+        </div>
+
+        <div class="container" style="background-color:#f1f1f1">
+          <button type="button" onclick="document.getElementById('id-modal').style.display='none'" class="cancelbtn">Cancel</button>
+          <span class="psw">Forgot password?</span>
+        </div>
+      </form>
+    </div>
+
+    <div class="top-wrapper" id="section1">
       <div class="container">
         <h1 class="tlt-welcome">Welcome to</h1>
         <h1 class="tlt-hummy">Hummy Bakery</h1>
@@ -33,8 +61,8 @@
         <p>Dengan proses handmade oleh koki terpercaya kami.</p>
       </div>
     </div>
+      <a href="#section2"> <img src="down-arrow-png-transparent-.png" class="scroll-top"></a>
 
-    <a href="#section2"> <img src="down-arrow-png-transparent-.png" class="scroll-top"></a>
     <div class="cake-wrapper" id="section2">
         <div class="container">
            <div class="heading">  
@@ -73,7 +101,8 @@
         </div>
         <i class="fa fa-arrow down" aria-hidden="true"> </i>
     </div>
-    <a href="#section3"> <img src="down-arrow-png-transparent-.png" class="scroll-top"></a>
+      <a href="#section3"> <img src="down-arrow-png-transparent-.png" class="scroll-top"></a>
+
     <div class="message-wrapper" id="section3">
       <div class="container">
         <h1 class="ttl-message">Kue Original Olahan</h1>
@@ -81,7 +110,8 @@
         <p>Hummy Bakery menyediakan semua bahan sendiri serta menciptakan segalanya sendiri.Dengan proses handmade oleh koki terpercaya kami</p>
       </div>
     </div>
-    <a href="#section4"> <img src="down-arrow-png-transparent-.png" class="scroll-top"></a>
+      <a href="#section4"> <img src="down-arrow-png-transparent-.png" class="scroll-top"></a>
+
     <div class="founder" id="section4">
       <div class="container">
         <div class="heading">
@@ -113,7 +143,8 @@
           </div>
       </div>
     </div>
-    <a href="#section1"> <img src="up-arrow-png-20.png" class="scroll-top"></a>
+      <a href="#section1"> <img src="up-arrow-png-20.png" class="scroll-top"></a>
+
     <footer>
       <div class="container" id="section5">
         <img class="ft-logo" src="logo1.png">
@@ -122,5 +153,17 @@
         <img class="contact" src="instagram.png">
       </div>
     </footer>
+
+    <script>
+
+    var modal = document.getElementById('id-modal');
+
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+    </script>
+
   </body>
 </html>
