@@ -1,5 +1,8 @@
 /* Untuk Tablet */
 @media all and (max-width: 1000px) {
+  .modal{
+      padding: 60px 250px 0 250px;
+    }
   .cake {
     width: 50%;
   }
